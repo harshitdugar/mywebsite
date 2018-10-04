@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.spinner-wrapper {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #263228;
+  z-index: 99999;
+  -webkit-animation: bgcolor 4s infinite ease-in-out;
+  animation: bgcolor 4s infinite ease-in-out; }
+
+.txt {
+  position: absolute;
+  display: block;
+  top: 40vh;
+  font-size: 25px;
+  letter-spacing: 15px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffeb3b;
+  width: 100%;
+  text-transform: uppercase;
+  -webkit-animation: txt 4s infinite ease-in-out;
+  animation: txt 4s infinite ease-in-out;
+  text-align: center;
+  z-index: 999999999999;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0); }
+
+@-webkit-keyframes txt {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  30% {
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  60% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; }
+  61% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@keyframes txt {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  30% {
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  60% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; }
+  61% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+.txt1 {
+  position: absolute;
+  display: block;
+  top: 40vh;
+  font-size: 25px;
+  letter-spacing: 15px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffeb3b;
+  width: 100%;
+  text-transform: uppercase;
+  -webkit-animation: txt1 4s infinite ease-in-out;
+  animation: txt1 4s infinite ease-in-out;
+  text-align: center;
+  z-index: 999999999999;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0); }
+
+@-webkit-keyframes txt1 {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  60% {
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  91% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  91% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0; } }
+
+@keyframes txt1 {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  60% {
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  91% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  91% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0; } }
+
+@-webkit-keyframes bgcolor {
+  0% {
+    background-color: #263228; }
+  100% {
+    background-color: #596275; } }
+
+@keyframes bgcolor {
+  0% {
+    background-color: #263228; }
+  100% {
+    background-color: #596275; } }
+
+.spinner {
+  position: absolute;
+  top: 45%;
+  left: 48%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+@-webkit-keyframes profile {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  40% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    opacity: 0; }
+  41% {
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0); } }
+
+@keyframes profile {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  40% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    opacity: 0; }
+  41% {
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0); } }
+
+#index-profile {
+  border-radius: 50%;
+  -webkit-animation: profile 4s infinite ease-in-out;
+  animation: profile 4s infinite ease-in-out; }
