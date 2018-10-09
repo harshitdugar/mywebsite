@@ -11,7 +11,8 @@
 body {
   background-color: #596275;
   -webkit-animation: bgcolor 6s infinite ease-in-out;
-  animation: bgcolor 6s infinite ease-in-out; }
+  animation: bgcolor 6s infinite ease-in-out;
+  overflow-x: hidden; }
 
 @-webkit-keyframes bgcolor {
   0% {
@@ -32,6 +33,12 @@ body {
     background-color: #263228; }
   100% {
     background-color: #596275; } }
+
+::-webkit-scrollbar {
+  width: 0px;
+  /* remove scrollbar space */
+  background: transparent;
+  /* optional: just make scrollbar invisible */ }
 
 .spinner-wrapper {
   position: fixed;
