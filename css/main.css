@@ -299,6 +299,9 @@ li {
   @media (max-width: 330px) {
     .about-me--desc {
       font-size: 15px; } }
+  @media (max-width: 360px) {
+    .about-me--desc {
+      line-height: 1.5; } }
 
 @-webkit-keyframes name {
   0% {
