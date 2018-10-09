@@ -6,7 +6,7 @@
   top: 0
   bottom: 0
   background-color: #263228
-  animation: bgcolor 4s infinite ease-in-out
+  animation: bgcolor1 4s infinite ease-in-out
 .txt
   position: absolute
   display: block
@@ -18,58 +18,25 @@
   color: #ffeb3b
   width: 100%
   text-transform: uppercase
-  animation: txt 4s ease-in-out
+  animation: txt 2s ease-in-out
+  animation-delay: 1s
   text-align: center
-  z-index: 999999999999
-  transform: scale(0)
-  z-index: 99993
+  z-index: 1
+  visibility: hidden
 
 @keyframes txt
   0%
-    transform: scale(0)
-  30%
-    transform: scale(0)
-  60%
-    transform: scale(1)
-    opacity: 1
-  61%
-    opacity: 0
-  100%
-    opacity: 0
-
-.txt1
-  position: absolute
-  display: block
-  top: 40vh
-  font-size: 25px
-  letter-spacing: 15px
-  font-weight: 700
-  font-family: 'Montserrat', sans-serif
-  color: #ffeb3b
-  width: 100%
-  text-transform: uppercase
-  animation: txt1 4s ease-in-out
-  text-align: center
-  z-index: 999999999999
-  transform: scale(0)
-  z-index: 99994
-
-
-@keyframes txt1
-  0%
+    visibility: visible
     transform: scale(0)
   60%
-    transform: scale(0)
-  91%
     transform: scale(1)
-  91%
-    transform: scale(1)
+    visibility: visible
     opacity: 1
   100%
-    transform: scale(1)
     opacity: 0
 
-@keyframes bgcolor
+
+@keyframes bgcolor1
   0%
     background-color: #263228
   100%
@@ -81,23 +48,23 @@
   left: 50%
   transform: translate(-50%,-50%)
 
-
 @keyframes profile
   0%
     transform: scale(1)
-  40%
+    opacity: 1
+  70%
     transform: scale(0.5)
     opacity: 0
     display: block
-  41%
-    transform: scale(0)
   100%
     transform: scale(0)
 
 #index-profile
   border-radius: 50%
-  animation: profile 4s ease-in-out
+  animation: profile 2s ease-in-out
   z-index: 99992
+  opacity: 0
+
 
 .social
   position: absolute
@@ -109,6 +76,7 @@
   border-radius: 50%
   animation: social 3s ease-in-out
   transform: translateY(-25vh)
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 
 @keyframes social
   0%

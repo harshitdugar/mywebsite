@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro')
+@import url('https://fonts.googleapis.com/css?family=Open+Sans')
+@import url('https://fonts.googleapis.com/css?family=Work+Sans')
+.index-about--me
+  position: absolute
+  top: 32%
+  width: 100%
+
+.about-me--name
+  text-align: center
+  font-family: 'Source Sans Pro', sans-serif
+  font-size: 20px
+  font-weight: bold
+  color: #bdbdbd
+  opacity: 0.85
+  animation: name 0.7s ease-in-out
+  @media (max-width: 330px)
+    margin-top: 10px
+
+.about-me--desc
+  text-align: center
+  font-family: 'Work Sans', sans-serif
+  font-size: 20px
+  font-weight: bold
+  color: #efac91
+  opacity: 0.7
+  line-height: 2
+  animation: desc 1.4s ease-in-out
+  padding: 10px
+  @media (max-width: 330px)
+    font-size: 15px
+
+
+@keyframes name
+  0%
+    transform: translate(-2%,2%)
+    opacity: 0
+@keyframes desc
+  0%
+    transform: translate(-2%,2%)
+    opacity: 0
+  45%
+    transform: translate(-2%,2%)
+    opacity: 0
+.about-me--reach
+  animation: reach 2.1s ease-in-out
+
+@keyframes reach
+  0%
+    transform: translate(-2%,2%)
+    opacity: 0
+  75%
+    transform: translate(-2%,2%)
+    opacity: 0
