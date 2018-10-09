@@ -249,6 +249,9 @@ body {
   @media (max-width: 330px) {
     .index-icons {
       margin-top: 35px; } }
+  @media (max-width: 360px) {
+    .index-icons {
+      margin-top: 40px; } }
   @supports (-webkit-overflow-scrolling: touch) {
     .index-icons {
       margin-top: 40px; } }
@@ -278,6 +281,9 @@ li {
   @media (max-width: 330px) {
     .about-me--name {
       margin-top: 20px; } }
+  @media (max-width: 360px) {
+    .about-me--name {
+      margin-top: 30px; } }
 
 .about-me--desc {
   text-align: center;
